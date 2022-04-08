@@ -1,0 +1,1 @@
+web: gunicorn MonnityApp.wsgi --log-file -
