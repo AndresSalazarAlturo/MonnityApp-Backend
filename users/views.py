@@ -9,7 +9,7 @@ from django.contrib.auth.views import PasswordChangeView
 from django.contrib.auth.forms import PasswordChangeForm
 
 ##Forms
-from .forms import SignUpForm, ProfileUpdateForm
+from .forms import SignUpForm, ProfileUpdateForm, UserCreationForm
 
 def home(request):
     """Users Home View"""

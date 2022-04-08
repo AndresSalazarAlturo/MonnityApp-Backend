@@ -16,8 +16,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('users/', include('django.contrib.auth.urls')),
     path('', TemplateView.as_view(template_name='home.html'), name='home'),
-    path('users/signup/', signup_view, name="signup"),
-    path('users/profileupdate/', UserEditView.as_view(), name="profileupdate"),
+    path('users/signup/', signup_view, name='signup'),
+    path('users/profileupdate/', UserEditView.as_view(), name='profileupdate'),
     path('users/password/', PasswordsChangeView.as_view(template_name='registration/change_password.html'),
         name="change_password"),
 
